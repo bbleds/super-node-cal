@@ -3,7 +3,7 @@
 //actual methods
 'use strict';
 
-const _ = require("../node_modules/lodash");
+const _ = require("../../node_modules/lodash");
 
 const yearObj = {}
 

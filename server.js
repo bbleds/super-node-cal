@@ -21,6 +21,23 @@ app.use(sassMiddleware({
 //look for files in /public directory
 app.use(express.static(path.join(__dirname, '/public')));
 
+// get year and month generator modules
+const {outputCal, calHeaderOutput, calBodyOutput} = require("./public/javascripts/monthGen.js");
+const {makeYear} = require("./public/javascripts/yearGen.js");
+
+// API for generating years
+app.get("/api/:year", (req, res)=>{
+	const string = `<pre>${makeYear(req.params.year).toString()}</pre>`;
+	res.send(`${string}`)
+});
+
+// API for generating the month of a specific year
+app.get("/api/:year/:month", (req, res)=>{
+	const string = `<pre>${outputCal(parseInt(req.params.month),parseInt(req.params.year))}</pre>`;
+	console.log(string);
+	res.send(`${string}`)
+});
+
 // index/default route
 app.get("/", (req, res)=>{
 	res.render("index")

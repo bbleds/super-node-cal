@@ -7,15 +7,24 @@ block content
 			.col-md-4
 			.col-md-4
 				button.btn.btn-primary(data-toggle="modal" data-target="#demoModal") Demo
+		.row
+			.col-md-3
+			.col-md-9
+				#generationOutput
 	#demoModal.modal.fade(role="dialog")
 		.modal-dialog
 			.modal-content
 				.modal-header
 					h2 My sweeeeet Modal
 				.modal-body
-					input.form-control(placeholder="Enter Month Here")
-					input.form-control(placeholder="Enter Year Here")
+					p Enter Year to generate a full year calendar
+					p (Accepts any year in range: 1753-9999)
+					input#yearInput.form-control(placeholder="Enter Year Here")
+					p Enter Month (optional)
+					p (Where January = 1, Feburary = 2, etc)
+					input#monthInput.form-control(placeholder="Month Number Here")
 				.modal-footer
-					button.btn.btn-primary(data-dismiss="modal") This is so great
+					button#getGeneration.btn.btn-primary(data-dismiss="modal") Generate
 	script(src="./lib/jquery/dist/jquery.min.js")
 	script(src="./lib/bootstrap/dist/js/bootstrap.min.js")
+	script(src="./javascripts/main.js")
