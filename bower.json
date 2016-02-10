@@ -1,0 +1,20 @@
+{
+  "name": "super-node-cal",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Benjamin Bledsoe <bledsoedesigns@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bbleds/super-node-cal",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "super-node-cal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bower": "bower"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbleds/super-node-cal.git"
+  },
+  "author": "Benjamin Bledsoe <bledsoedesigns@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbleds/super-node-cal/issues"
+  },
+  "homepage": "https://github.com/bbleds/super-node-cal#readme",
+  "devDependencies": {
+    "bower": "^1.7.7"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
