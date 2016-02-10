@@ -17,12 +17,14 @@ block content
 				.modal-header
 					h2 My sweeeeet Modal
 				.modal-body
-					p Enter Year to generate a full year calendar
-					p (Accepts any year in range: 1753-9999)
-					input#yearInput.form-control(placeholder="Enter Year Here")
-					p Enter Month (optional)
-					p (Where January = 1, Feburary = 2, etc)
-					input#monthInput.form-control(placeholder="Month Number Here")
+					label(for="yearInput") Enter Year to generate a full year calendar
+					br
+					label(for="yearInput") (Accepts any year in range: 1753-9999)
+					input#yearInput.form-control(placeholder="Enter Year Here" name="yearInput")
+					label(for="monthInput") Enter Month (optional)
+					br
+					label(for="monthInput") (Where January = 1, Feburary = 2, etc)
+					input#monthInput.form-control(placeholder="Month Number Here" name="monthInput")
 				.modal-footer
 					button#getGeneration.btn.btn-primary(data-dismiss="modal") Generate
 	script(src="./lib/jquery/dist/jquery.min.js")
