@@ -2,5 +2,20 @@ extends ./header.jade
 
 block content
 	h1 SUPER NODE CAL
+	.container-fluid
+		.row
+			.col-md-4
+			.col-md-4
+				button.btn.btn-primary(data-toggle="modal" data-target="#demoModal") Demo
+	#demoModal.modal.fade(role="dialog")
+		.modal-dialog
+			.modal-content
+				.modal-header
+					h2 My sweeeeet Modal
+				.modal-body
+					input.form-control(placeholder="Enter Month Here")
+					input.form-control(placeholder="Enter Year Here")
+				.modal-footer
+					button.btn.btn-primary(data-dismiss="modal") This is so great
 	script(src="./lib/jquery/dist/jquery.min.js")
 	script(src="./lib/bootstrap/dist/js/bootstrap.min.js")
