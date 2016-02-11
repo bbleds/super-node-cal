@@ -1,1 +1,2 @@
-web: node --harmony_destructuring server.js && node_modules/bower install
+web: node --harmony_destructuring server.js
+web: node_modules/bower install
