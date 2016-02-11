@@ -12,6 +12,7 @@ $("html").on("click", "#getGeneration", function(){
 		})
 
 	}
+	//if month doesn't pass or isn't entered
 	else if(parseInt($("#yearInput").val()) >= 1753 && parseInt($("#yearInput").val()) <= 9999)
 	{
 		//get month of specfied year from api

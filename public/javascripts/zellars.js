@@ -8,7 +8,6 @@ let zellars = {};
 
 //returns 13 for january
 zellars.modifiedMonth = (monthNum) =>{
-    //let monthArray =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
     switch (monthNum) {
       case(1):

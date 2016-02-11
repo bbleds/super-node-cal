@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bower": "bower",
-    "serve-dev": "nodemon --harmony_destructuring server.js"
+    "serve-dev": "nodemon --harmony_destructuring server.js",
+    "cal": "node --harmony_destructuring public/javascripts/cal.js"
   },
   "repository": {
     "type": "git",
