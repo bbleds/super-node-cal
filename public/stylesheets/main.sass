@@ -2,10 +2,18 @@ body
 	background-color: black
 	color: white
 
+	#logo
+		margin: 30px 40px
+
 	.thin
 		font-weight: 100
 	.medium
 		font-weight: 300
+	.centered
+		text-align: center
+		margin-top: 30px
+		font-size: 2rem
+		font-weight: 200
 
 	#intro
 		h2,h3
@@ -31,11 +39,31 @@ body
 		button
 			font-size: 2.2rem
 			margin-top: 30px
+
 	#demoModal
-		color: black
+		color: rgba(0, 0, 0, 0.73)
+		text-align: center
+		.modal-body
+			padding-top: 30px
+		label
+			&:first-of-type
+				color: #337AB7
+			&:nth-of-type(3)
+				margin-top: 30px
+				color: #337AB7
+		.modal-footer
+			text-align: center
+
+
 	#generationOutput
-		pre
-			font-size: 1.1rem
-			background-color: transparent
-			color: white
-			border: 0px solid white
+			overflow: hidden
+			pre
+				font-size: 1.1rem
+				background-color: transparent
+				color: white
+				border: 0px solid white
+				position: relative
+				left: 50%
+				margin: 20px 0px 50px -220px
+			.singleMonth
+				margin-left: -72px

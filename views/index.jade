@@ -1,7 +1,7 @@
 extends ./header.jade
 
 block content
-	h1 Node Cal
+	h1#logo Node Cal
 	.container-fluid
 		.row#intro
 			.col-md-12
@@ -16,23 +16,21 @@ block content
 			.col-md-4
 				button.btn.btn-primary.animated.bounce(data-toggle="modal" data-target="#demoModal") Demo
 		.row
-			.col-md-3
-			.col-md-9
+			.col-md-12
 				#generationOutput
+
 	#demoModal.modal.fade(role="dialog")
 		.modal-dialog
 			.modal-content
-				.modal-header
-					h2 My sweeeeet Modal
 				.modal-body
 					label(for="yearInput") Enter Year to generate a full year calendar
 					br
 					label(for="yearInput") (Accepts any year in range: 1753-9999)
-					input#yearInput.form-control(placeholder="Enter Year Here" name="yearInput")
+					input#yearInput.form-control(placeholder="Year" name="yearInput")
 					label(for="monthInput") Enter Month (optional)
 					br
 					label(for="monthInput") (Where January = 1, Feburary = 2, etc)
-					input#monthInput.form-control(placeholder="Month Number Here" name="monthInput")
+					input#monthInput.form-control(placeholder="Month" name="monthInput")
 				.modal-footer
 					button#getGeneration.btn.btn-primary(data-dismiss="modal") Generate
 	script(src="./lib/jquery/dist/jquery.min.js")

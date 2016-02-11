@@ -9,6 +9,7 @@ $("html").on("click", "#getGeneration", function(){
 		//get month of specfied year from api
 		$.get("/api/"+$("#yearInput").val()+"/"+$("#monthInput").val(), function(data){
 			$("#generationOutput").html(data)
+			$("#generationOutput").find("pre").addClass("singleMonth")
 		})
 
 	}
@@ -22,6 +23,6 @@ $("html").on("click", "#getGeneration", function(){
 	}
 	else
 	{
-		$("#generationOutput").html("There was an error with that request, please try again")
+		$("#generationOutput").html("<p class='centered'>There was an error with that request, please try again!</p>")
 	}
 })
