@@ -23,10 +23,10 @@ block content
 		.modal-dialog
 			.modal-content
 				.modal-body
-					label(for="yearInput") Enter Year to generate a full year calendar
+					label(for="yearInput") Enter Year (Required)
 					br
 					label(for="yearInput") (Accepts any year in range: 1753-9999)
-					input#yearInput.form-control(placeholder="Year" name="yearInput")
+					input#yearInput.form-control(placeholder="Year" name="yearInput" required="true")
 					label(for="monthInput") Enter Month (optional)
 					br
 					label(for="monthInput") (Where January = 1, Feburary = 2, etc)
