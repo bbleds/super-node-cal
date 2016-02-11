@@ -9,7 +9,7 @@ $("html").on("click", "#getGeneration", function(){
 		//get month of specfied year from api
 		$.get("/api/"+$("#yearInput").val()+"/"+$("#monthInput").val(), function(data){
 			$("#generationOutput").html(data)
-			$("#generationOutput").find("pre").addClass("singleMonth")
+			$("#generationOutput").find("pre").addClass("singleMonth animated fadeIn")
 		})
 
 	}
@@ -19,6 +19,7 @@ $("html").on("click", "#getGeneration", function(){
 		//get month of specfied year from api
 		$.get("/api/"+$("#yearInput").val(), function(data){
 			$("#generationOutput").html(data)
+			$("#generationOutput").find("pre").addClass("animated fadeIn")
 		})
 	}
 	else

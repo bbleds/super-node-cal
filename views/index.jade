@@ -5,7 +5,8 @@ block content
 	.container-fluid
 		.row#intro
 			.col-md-12
-				i.fa.fa-calendar.animated.fadeInDown
+				#generationOutput
+					i.fa.fa-calendar.animated.fadeInUp
 			.col-md-12
 				h2.thin A calendar generating application that mimics the UNIX cal terminal program
 				h3.medium Take a test drive!
@@ -15,9 +16,8 @@ block content
 			.col-md-4
 			.col-md-4
 				button.btn.btn-primary.animated.bounce(data-toggle="modal" data-target="#demoModal") Demo
-		.row
-			.col-md-12
-				#generationOutput
+
+
 
 	#demoModal.modal.fade(role="dialog")
 		.modal-dialog
