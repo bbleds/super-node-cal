@@ -9,5 +9,6 @@ This app was built during my time at Nashville Software School with an overall g
 
 ##Running & Local Use
 ####Running in the Browser
-Node cal current runs on both the browser and the command line! You can demo the browser version [here](https://node-cal.herokuapp.com)!
+Node cal current runs on both the browser and the command line! You can demo the browser version
+<a href="https://node-cal.herokuapp.com" target="_blank">here</a>!
 
