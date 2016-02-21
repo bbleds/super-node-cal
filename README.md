@@ -9,6 +9,10 @@ This app was built during my time at Nashville Software School with an overall g
 
 ##Running & Local Use
 ####Running in the Browser
-Node cal current runs on both the browser and the command line! You can demo the browser version
+Node Cal current runs on both the browser and the command line! You can demo the browser version
 <a href="https://node-cal.herokuapp.com" target="_blank">here</a>!
 ####Running Locally
+If you want to run Node Cal locally run the following commands in the command line-
+  1. Git clone onto your local machine - ```git clone https://github.com/bbleds/super-node-cal.git```
+  2. Go into the newly created directory - ```cd super-node-cal```
+  3. Npm install node module dependecies for this project - ```npm install```
