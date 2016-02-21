@@ -17,4 +17,7 @@ If you want to run Node Cal locally run the following commands in the command li
   2. Go into the newly created directory - ```cd super-node-cal```
   3. Npm install node module dependecies for this project - ```npm install```
   4. You are now ready to use the app in the command line!
-   Run the following command (where 'month number' is 1 for January, 2 for February, etc, and 'year number' is any year betweeen 1753 and 9999)- ```npm run <month number> <year number>``` 
+  <br>
+   Run the following command for a specific month of a specific year (where 'month number' is 1 for January, 2 for February, etc, and 'year number' is any year betweeen 1753 and 9999)- ```npm run cal <month number> <year number>```
+   <br>
+   Run the following command for a full year (where 'year number' is any year betweeen 1753 and 9999)- ```npm run cal <year number>```
